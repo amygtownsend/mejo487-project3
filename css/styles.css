@@ -7,7 +7,7 @@
 .site {
   display: grid;
   margin: 0;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 3fr 2fr;
   grid-template-rows: auto;
   grid-template-areas:
     'header header'
@@ -16,9 +16,11 @@
 }
 
 .site-header {
-  grid-area: 'header';
-  /* Header takes up full width of window */
-  width: 100%;
+  grid-area: header;
+}
+
+.page-title {
+  grid-area: title;
 }
 
 /* FLEX STYLES */
@@ -41,6 +43,10 @@
 /* Logo tagline typeface */
 .logo-tagline {
   font-family: Georgia, serif;
+}
+
+.page-title {
+  font-family: 'Vidaloka', sans-serif;
 }
 
 /* STICKY ICON BAR */
@@ -140,6 +146,27 @@
 }
 
 /* GENERAL STYLES */
+
+/* Site header */
+.site-header {
+  /* Header takes up full width of window */
+  width: 100%;
+}
+
+/* Page title section */
+.page-title {
+  margin: 75px 140px 40px 125px;
+  padding-right: 325px;
+  border-bottom: 1px solid #d5d5d5;
+}
+
+/* Article title */
+.page-title h1 {
+  font-size: 3.2rem;
+  line-height: 3.5rem;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
 
 /* Links */
 a {
