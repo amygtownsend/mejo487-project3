@@ -1,0 +1,185 @@
+* {
+  /* Padding and border of all elements included in the width and height */
+  box-sizing: border-box;
+}
+
+/* GRID LAYOUT */
+.site {
+  display: grid;
+  margin: 0;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    'header header'
+    'title title'
+    'article aside'
+}
+
+.site-header {
+  grid-area: 'header';
+  /* Header takes up full width of window */
+  width: 100%;
+}
+
+/* FLEX STYLES */
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: nowrap;
+}
+
+/* TYPEFACES */
+
+/* Nav bar typeface */
+.nav-bar {
+  font-family: 'Libre Franklin', sans-serif;
+  letter-spacing: .5px;
+  word-spacing: 1px;
+}
+
+/* Logo tagline typeface */
+.logo-tagline {
+  font-family: Georgia, serif;
+}
+
+/* GENERAL STYLES */
+
+/* Links */
+a {
+  text-decoration: none;
+}
+
+/* Sticky header */
+.fixed {
+  position: fixed;
+  margin-top: -20px;
+  padding-top: 20px;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+/* Nav bar */
+.nav-bar {
+  height: 60px;
+  background: rgba(0,0,0,0.96);
+  padding: 0 20px 0 16px;
+}
+
+/* Nav bar left buttons, right buttons and center logo & tagline */
+.nav-left, .nav-right, .nav-center {
+  /* Each section have equal width */
+  flex: 1;
+}
+
+/* Nav bar right butons */
+.nav-right-buttons {
+  /* Right align */
+  float: right;
+}
+
+/* Nav bar center logo & tagline */
+.nav-center {
+  text-align: center;
+  padding-top: 10px;
+}
+
+/* Logo image */
+.main-logo {
+  display: block;
+  /* Center image */
+  margin: 0 auto;
+  width: 180px;
+}
+
+/* Logo tagline */
+.logo-tagline {
+  color: #cccccc;
+  font-size: 11px;
+  font-weight: 400;
+  padding-top: 2px;
+  font-style: italic;
+}
+
+/* Nav bar buttons */
+.button, .blue-button {
+  display: inline-block;
+  margin: 11px 3px;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  height: 36px;
+  /* Vertically align buttons in the middle */
+  vertical-align: middle;
+  cursor: pointer;
+  transition: 200ms all linear;
+}
+
+/* Normal button */
+.button {
+  background-color: #1f1f1f;
+  border: 1px solid #444;
+  color: #f0f0f0;
+}
+
+/* Blue bkg button */
+.blue-button {
+  background-color: #1955a5;
+  border: 1px solid #3d73d5;
+  color: #fff;
+}
+
+/* Search button icon */
+.search i {
+  font-size: 16px;
+  line-height: 16px;
+  padding: 9px 10px;
+}
+
+/* Sections button, "try 1 month" button, sign in button */
+.sections, .subscribe, .sign-in {
+  padding: 7px 14px;
+}
+
+/* Sections button icon */
+.sections i {
+  position: relative;
+  font-size: 18px;
+  line-height: 18px;
+  top: 2px;
+  padding-left: 5px;
+}
+
+/* Sign in button */
+.sign-in {
+  padding-right: 10px;
+}
+
+/* Sign in button icon */
+.sign-in-icon {
+  height: 100%;
+  padding-bottom: 2px;
+  padding-left: 6px;
+  /* Vertically align button text and icon in the middle */
+  vertical-align: middle;
+}
+
+/* Nav bar button icon when button is hovered over */
+.nav-bar .button:hover i {
+  color: #fff;
+}
+
+/* Nav bar button when button is hovered over */
+.nav-bar .button:hover {
+  border-color: #f9f9f9;
+  background-color: #000;
+  color: #fff;
+}
+
+/* Nav bar blue bkg button when button is hovered over */
+.nav-bar .blue-button:hover {
+  background-color: #3d73d5;
+}
