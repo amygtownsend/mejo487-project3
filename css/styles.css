@@ -23,6 +23,10 @@
   grid-area: title;
 }
 
+.article {
+  grid-area: article;
+}
+
 /* FLEX STYLES */
 .flex {
   display: flex;
@@ -33,18 +37,19 @@
 
 /* TYPEFACES */
 
-/* Nav bar typeface */
+/* Libre Franklin */
 .nav-bar, .icon-bar {
   font-family: 'Libre Franklin', sans-serif;
   letter-spacing: .5px;
   word-spacing: 1px;
 }
 
-/* Logo tagline typeface */
-.logo-tagline {
+/* Georgia */
+.logo-tagline, p {
   font-family: Georgia, serif;
 }
 
+/* Vidaloka */
 .page-title {
   font-family: 'Vidaloka', sans-serif;
 }
@@ -147,16 +152,26 @@
 
 /* GENERAL STYLES */
 
+/* Links */
+a {
+  text-decoration: none;
+}
+
 /* Site header */
 .site-header {
   /* Header takes up full width of window */
   width: 100%;
 }
 
+/* Shared margin left for page title section and article */
+.page-title, .article {
+  margin-left: 125px;
+}
+
 /* Page title section */
 .page-title {
   margin: 75px 140px 40px 125px;
-  padding-right: 325px;
+  padding-right: 300px;
   border-bottom: 1px solid #d5d5d5;
 }
 
@@ -168,9 +183,24 @@
   font-weight: 400;
 }
 
-/* Links */
-a {
-  text-decoration: none;
+/* Article section */
+.article {
+  padding-right: 45px;
+  border-right: 1px solid #d5d5d5;
+}
+
+/* Article body text */
+.article p {
+  margin-bottom: 18px;
+  margin-top: 4px;
+  font-size: 1.15rem;
+  line-height: 2rem;
+}
+
+/* Article link text */
+.article a {
+  color: #2c6cb4;
+  border-bottom: 1px solid #d5d5d5;
 }
 
 /* Sticky header */
