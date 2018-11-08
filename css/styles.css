@@ -32,7 +32,7 @@
 /* TYPEFACES */
 
 /* Nav bar typeface */
-.nav-bar {
+.nav-bar, .icon-bar {
   font-family: 'Libre Franklin', sans-serif;
   letter-spacing: .5px;
   word-spacing: 1px;
@@ -41,6 +41,102 @@
 /* Logo tagline typeface */
 .logo-tagline {
   font-family: Georgia, serif;
+}
+
+/* STICKY ICON BAR */
+
+/* Fixed icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+  position: fixed;
+  margin-top: 12px;
+  top: 50%;
+  border: 1px solid #d5d5d5;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Top part of icon bar */
+.icon-bar-top {
+  padding-bottom: 5px;
+}
+
+/* Bottom part of icon bar */
+.icon-bar-bottom {
+  background-color: #f0f0f0;
+  border-top: 1px solid #d5d5d5;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  /* Styles the text below the comments icon */
+  font-size: 11.5px;
+  font-weight: 700;
+}
+
+/* Icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 12px 15px;
+}
+
+/* Icon bar links in bottom part of icon bar */
+.icon-bar-bottom a {
+  padding: 13px 15px;
+  padding-left: 9px;
+}
+
+/* Icon bar icons */
+.icon-bar i {
+  font-size: 18px;
+}
+
+/* Icons have reduced opacity on hover */
+.icon-bar a:hover {
+  opacity: .8;
+}
+
+/* Color styles for each icon in icon bar */
+.home {
+  color: #5a5a5a;
+}
+
+.facebook {
+  color: #3b5998;
+}
+
+.twitter {
+  color: #00aced;
+}
+
+.google {
+  color: #dd4b39;
+}
+
+.envelope {
+  color: #bd2a32;
+}
+
+.linkedin {
+  color: #007bb6;
+}
+
+.pinterest {
+  color: #cb2027;
+}
+
+.tumblr {
+  color: #32506d;
+}
+
+.font, .print, .comments {
+  color: #000;
+}
+
+/* Comments icon */
+.comments i {
+  padding-bottom: 3px;
 }
 
 /* GENERAL STYLES */
