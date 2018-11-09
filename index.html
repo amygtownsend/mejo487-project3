@@ -8,6 +8,8 @@
 	<meta name="description" content="North Carolina Bicycle Crashes" />
 	<meta name="keywords"  content="nc,bicycle,crash" />
 	<meta name="Resource-type" content="Document" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/taucharts@2/dist/taucharts.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
   <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,400i,500,500i,700,700i|Vidaloka" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css" type="text/css" />
 </head>
@@ -67,27 +69,22 @@
   </div>
   <main class="main">
     <div class="article-title">
-      <h1>Trends in North Carolina bicycle and pedestrian crashes</h1>
+      <h1>Bicycle crash trends in Orange County, North Carolina</h1>
     </div>
     <article class="article">
-      <p>Lorem ipsum dolor sit amet, <a href="#">consectetur adipiscing</a> elit. Cras iaculis non sapien finibus congue. Morbi ut leo vulputate, varius lectus vitae, efficitur elit. Morbi fringilla erat ut felis rhoncus molestie. Etiam nec ultrices est. Sed a mauris in purus varius porta. Cras tristique, elit eu viverra condimentum, tortor neque lobortis dolor, consectetur efficitur dolor lectus pellentesque eros. Suspendisse vitae eros urna. Nullam sed faucibus ligula. Mauris in massa sed lorem bibendum accumsan. Curabitur fermentum, quam eget faucibus tempor, sem massa lobortis dui, id commodo massa sapien a nunc. Nulla ultricies mi nec purus faucibus laoreet aliquam a nunc. Duis eget tellus ut odio tempus tincidunt. Etiam in facilisis mauris. Aliquam pulvinar volutpat diam non sollicitudin.</p>
-
-      <p>Morbi a massa lobortis, hendrerit velit quis, dictum augue. Vivamus leo orci, accumsan et mauris eget, pharetra feugiat tortor. Sed aliquam, velit sed commodo faucibus, nibh dui malesuada neque, eu pharetra elit nibh at libero. Nunc pharetra enim non tristique scelerisque. Suspendisse egestas sagittis arcu dictum iaculis. Morbi vel magna hendrerit, consequat velit ut, efficitur sapien. Sed vulputate rhoncus mattis. Proin congue orci egestas facilisis convallis. Fusce sit amet erat ac orci consectetur dignissim eget a nibh. Phasellus euismod ex mi, eu molestie est volutpat nec. Fusce est turpis, placerat quis urna ac, suscipit viverra ante.</p>
-
-      <p>Nam neque risus, iaculis at luctus eget, luctus vitae enim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec scelerisque odio quis magna dictum euismod. Nullam elit lacus, rutrum at orci at, semper bibendum tellus. Integer sit amet ultrices mi. Morbi fermentum placerat imperdiet. In ac ex eu augue rutrum cursus. Aliquam vestibulum vehicula purus eget pulvinar. Vivamus quis nisl leo.</p>
-
-      <p>Praesent id suscipit sapien, a dignissim nibh. Phasellus semper massa eu augue porta, ac scelerisque elit eleifend. Praesent hendrerit dapibus mauris ac tempus. In mattis eu nibh in ullamcorper. Duis dignissim posuere lobortis. Praesent sit amet venenatis ante. Suspendisse dolor ipsum, consequat vel tortor ut, eleifend tempor eros.</p>
-
-      <p>Curabitur enim metus, consectetur sit amet diam in, pellentesque eleifend ante. Aenean odio mauris, venenatis et eros ut, sagittis lacinia ex. Sed vitae magna tortor. Vivamus ut blandit nulla, et ultrices massa. Mauris eu nibh et justo egestas ultricies in sed erat. Vestibulum dignissim metus ipsum, luctus aliquam est eleifend quis. Quisque convallis malesuada mattis. Aliquam finibus mollis lorem vel cursus. Nam imperdiet egestas justo, pulvinar molestie magna rhoncus in. Phasellus a rutrum metus. Aliquam consectetur non elit vel porttitor.</p>
-
-      <p>Etiam ornare nec massa et pellentesque. Etiam sagittis blandit orci in posuere. Donec suscipit egestas tincidunt. Aliquam eleifend diam id faucibus rutrum. Nunc interdum velit elit, vehicula convallis sem varius et. Curabitur lobortis pellentesque est, ac vulputate ipsum egestas quis. Suspendisse in odio et nisi tempus elementum nec et odio. Mauris eget neque in orci efficitur interdum. Nulla mattis rhoncus nunc imperdiet imperdiet. Mauris eleifend velit non enim laoreet, nec eleifend neque pharetra.</p>
-
-      <p>Fusce nulla diam, ultrices imperdiet mauris non, malesuada finibus elit. Suspendisse dolor magna, feugiat molestie ullamcorper vitae, auctor eu metus. Aliquam varius, mauris tincidunt volutpat ultrices, purus diam hendrerit arcu, nec pharetra magna felis nec est. Fusce enim nibh, consectetur non est fringilla, interdum auctor libero. Curabitur felis nibh, mattis eu dignissim et, pretium varius tellus. Nam scelerisque non sapien at placerat. Quisque aliquam id ante vel feugiat. Nam placerat auctor tempor. Curabitur elementum rutrum lectus, sed fringilla metus laoreet eget. Phasellus ultricies arcu et urna dignissim, id elementum quam aliquet.</p>
+      <p>The <a href="https://bikeleague.org/bfa/awards#state" target="_blank">League of American Bicyclists</a> has ranked North Carolina as the 20th most bicycle-friendly state in the nation and Carrboro as the state's most bicycle-friendly community. However, even bikers in Carrboro and the surrounding county need to watch out for potential crashes with vehicles. Orange County had 194 reported bicycle crashes from 2007 to 2015.</p>
+      <p>Data from Orange County as a whole appears to show that bicyclists from ages 20 to 24 are involved the most frequently in bicycle crashes. When analyzing the crashes by their location in Chapel Hill, Carrboro or a rural area, it becomes evident that bicycle crashes in Chapel Hill are the cause of this trend. The high number of crashes with bikers in their early twenties is likely due to the large student population at the University  of North Carolina at Chapel Hill.</p>
+      <div id="chart1" class="chart"></div>
+      <div id="chart2" class="chart"></div>
     </article>
   </main>
 
   <script src="https://use.fontawesome.com/2998d61270.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3@4.13.0/build/d3.min.js" charset="utf-8"></script>
+  <script src="https://cdn.jsdelivr.net/underscorejs/latest/underscore-min.js" type="text/javascript"></script>
+  <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/taucharts@2/dist/taucharts.min.js" type="text/javascript"></script>
   <script src="js/scripts.js"></script>
 </body>
 </html>

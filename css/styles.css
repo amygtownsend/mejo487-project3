@@ -352,6 +352,18 @@ a {
   border-bottom: 1px solid #d5d5d5;
 }
 
+/* Charts 1 and 2 */
+#chart1, #chart2 {
+  width: 100%;
+  height: 400px;
+}
+
+/* Chart 2 */
+#chart2 {
+  height: 300px;
+}
+
+
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 992px) {
