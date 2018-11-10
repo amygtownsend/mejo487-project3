@@ -50,7 +50,7 @@
 /* TYPEFACES */
 
 /* Libre Franklin */
-.nav-bar, .icon-bar {
+.nav-bar, .icon-bar, h3, h6 {
   font-family: 'Libre Franklin', sans-serif;
   letter-spacing: .5px;
   word-spacing: 1px;
@@ -356,11 +356,25 @@ a {
 #chart1, #chart2 {
   width: 100%;
   height: 400px;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 /* Chart 2 */
 #chart2 {
   height: 300px;
+}
+
+/* Chart title, table title */
+h3 {
+  padding-top: 25px;
+}
+
+/* Data source */
+h6 {
+  padding-top: 10px;
+  margin-top: 0;
+  padding-bottom: 25px;
 }
 
 

@@ -1,20 +1,20 @@
 $(document).ready(function (){
   console.log('scripts loaded');
 
-  var ageDataUrl = './js/crashes-age-city.json';
-  var crashes1 = '';
+  var url = './js/crashes-age-city.json';
+  var crashes = '';
 
   $.ajax({
     type: 'GET',
     dataType: 'json',
-    url: ageDataUrl,
-    data: crashes1,
+    url: url,
+    data: crashes,
     async: true,
-    success: function(crashes1){
-      console.log(crashes1);
+    success: function(crashes){
+      console.log(crashes);
       // Chart 1
       var chart = new Taucharts.Chart({
-          data: _(crashes1)
+          data: _(crashes)
             .chain()
             .reduce(function (memo, row) {
         	    memo[row.BikeAgeGrp] = memo[row.BikeAgeGrp] || {
@@ -46,13 +46,13 @@ $(document).ready(function (){
   $.ajax({
     type: 'GET',
     dataType: 'json',
-    url: ageDataUrl,
-    data: crashes1,
+    url: url,
+    data: crashes,
     async: true,
-    success: function(crashes1){
+    success: function(crashes){
       // Chart 2
       var chart = new Taucharts.Chart({
-          data: _(crashes1)
+          data: _(crashes)
             .chain()
             .reduce(function (memo, row) {
               var k = row.BikeAgeGrp + row.City;
@@ -85,6 +85,22 @@ $(document).ready(function (){
       chart.renderTo('#chart2');
     }
   });
+
+  $('#table').DataTable( {
+    ajax: {
+        url: './js/crashes-data.json',
+        dataSrc: ''
+    },
+    columns: [
+        { data: 'CrashYear' },
+        { data: 'City' },
+        { data: 'CrashSevr' },
+        { data: 'CrashType' },
+        { data: 'SpeedLimit' },
+        { data: 'AmbulanceR' },
+        { data: 'HitRun' }
+    ]
+  } );
 });
 
 // Sticky header disappears on scroll
