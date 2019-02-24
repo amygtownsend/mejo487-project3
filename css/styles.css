@@ -399,7 +399,6 @@ h6 {
   /* Show mobile nav bar buttons */
   .sign-in-mobile, .sections-mobile {
     display: inline-block;
-    vertical-align: middle;
     height: 60px;
     padding: 18px 0;
   }
@@ -413,7 +412,6 @@ h6 {
   .sign-in-mobile-icon, .sections-mobile i {
     display: block;
     height: 100%;
-    vertical-align: middle;
     color: #f0f0f0;
     font-size: 24px;
   }
