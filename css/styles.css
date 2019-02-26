@@ -377,6 +377,11 @@ h6 {
   padding-bottom: 25px;
 }
 
+/* Remove Taucharts exclude option on tooltip */
+.tau-chart__tooltip__button.i-role-exclude {
+  display: none;
+}
+
 
 /* MEDIA QUERIES */
 
