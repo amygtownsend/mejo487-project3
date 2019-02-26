@@ -13,22 +13,19 @@
     'main'
 }
 
-.main {
-  display: grid;
-  margin: 0;
-  grid-template-columns: 3fr 2fr;
-  grid-template-rows: auto;
-  grid-template-areas:
-    'title title'
-    'article aside'
-}
-
 .site-header {
   grid-area: header;
 }
 
 .main {
+  display: grid;
+  margin: 0;
   grid-area: main;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    'title title'
+    'article aside'
 }
 
 .article-title {
