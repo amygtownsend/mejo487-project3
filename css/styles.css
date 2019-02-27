@@ -193,18 +193,18 @@ h6 {
   display: none;
 }
 
-/* MEDIA QUERIES */
+/* DESKTOP MEDIA QUERY */
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 992px) {
 
   /* ARTICLE STYLES */
 
   .article {
-    margin-left: 75px;
+    margin: 25px 100px;
   }
 
   .article-title {
-    padding-right: 33%;
+    padding-right: 20%;
     margin-bottom: 40px;
     border-bottom: 1px solid #d5d5d5;
   }
