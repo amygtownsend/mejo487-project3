@@ -16,43 +16,81 @@
   <link rel="stylesheet" href="css/styles.css" type="text/css" />
 </head>
 
-<body class="site">
-  <header class="site-header fixed" id="header">
-    <nav class="nav-bar flex">
-      <div class="nav-left">
-        <a href="#" class="sections-mobile">
-          <i class="fa fa-bars"></i>
-        </a>
-        <a href="#" class="search button">
-          <i class="fa fa-search"></i>
-        </a>
-        <a href="#" class="sections button">
-          Sections
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
-      <div class="nav-center">
-        <a href="https://www.washingtonpost.com" target="_blank">
-          <img class="main-logo" src="img/washpostlogo.png" alt="The Washington Post">
-          <div class="logo-tagline">Democracy Dies in Darkness</div>
-        </a>
-      </div>
-      <div class="nav-right">
-        <div class="nav-right-buttons">
-          <a href="#" class="sign-in-mobile">
-            <img class="sign-in-mobile-icon" src="img/user.png" alt="Sign In User Icon">
+<body>
+  <div class="site">
+    <header class="site-header fixed" id="header">
+      <nav class="nav-bar flex">
+        <div class="nav-left">
+          <a href="#" class="sections-mobile">
+            <i class="fa fa-bars"></i>
           </a>
-          <a href="#" class="sign-in button">
-            Sign In
-            <img class="sign-in-icon" src="img/user.png" alt="User Icon">
+          <a href="#" class="search button">
+            <i class="fa fa-search"></i>
           </a>
-          <a href="#" class="subscribe blue-button">
-            Try 1 month for $1
+          <a href="#" class="sections button">
+            Sections
+            <i class="fa fa-bars"></i>
           </a>
         </div>
+        <div class="nav-center">
+          <a href="https://www.washingtonpost.com" target="_blank">
+            <img class="main-logo" src="img/washpostlogo.png" alt="The Washington Post">
+            <div class="logo-tagline">Democracy Dies in Darkness</div>
+          </a>
+        </div>
+        <div class="nav-right">
+          <div class="nav-right-buttons">
+            <a href="#" class="sign-in-mobile">
+              <img class="sign-in-mobile-icon" src="img/user.png" alt="Sign In User Icon">
+            </a>
+            <a href="#" class="sign-in button">
+              Sign In
+              <img class="sign-in-icon" src="img/user.png" alt="User Icon">
+            </a>
+            <a href="#" class="subscribe blue-button">
+              Try 1 month for $1
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <article class="article">
+      <div class="article-title">
+        <h1>Bicycle crash trends in Orange County, North Carolina</h1>
       </div>
-    </nav>
-  </header>
+      <div class="article-content">
+        <p>The <a href="https://bikeleague.org/bfa/awards#state" target="_blank">League of American Bicyclists</a> has
+          ranked North Carolina as the 20th most bicycle-friendly state in the nation and Carrboro as the state's most
+          bicycle-friendly community. However, even bikers in Carrboro and the surrounding county need to watch out for
+          potential crashes with vehicles. Orange County had 194 reported bicycle crashes from 2007 to 2015.</p>
+        <p>Data from Orange County as a whole appears to show that bicyclists from ages 20 to 24 are involved the most
+          frequently in bicycle crashes. When analyzing the crashes by their location in Chapel Hill, Carrboro or a
+          rural
+          area, it becomes evident that bicycle crashes in Chapel Hill are the cause of this trend. The high number of
+          crashes with bikers in their early twenties is likely due to the large student population at the University of
+          North Carolina at Chapel Hill.</p>
+        <h3>Bicycle Crashes in Orange County per Biker Age Group</h3>
+        <div id="chart1"></div>
+        <h6>North Carolina Department of Transportation Bicycle Crashes, 2007 to 2015</h6>
+        <div id="chart2"></div>
+        <h6>North Carolina Department of Transportation Bicycle Crashes, 2007 to 2015</h6>
+        <p>Bicyclists from ages 50 to 59 are the second group involved most frequently in Orange County bicycle crashes
+          due to the high number of crashes for this age group in rural locations. According to the
+          <a href="https://www.cdc.gov/motorvehiclesafety/bicycle/index.html" target="_blank">Centers for Disease
+            Control
+            and Prevention</a>, adults aged 50 to 59 years old have the highest bicycle death rates in the United
+          States.
+          The data for rural crashes in Orange County follow this national trend, unlike the crash data for urban
+          Carrboro
+          and Chapel Hill. It's possible that these cities' policies for bicyclist safety and mobility have a
+          significant
+          impact for older bicyclists at risk of serious and life-threatening injury. The demographics
+          for
+          each area may also contribute to these data trends.
+        </p>
+      </div>
+    </article>
+  </div>
   <div class="icon-bar">
     <div class="icon-bar-top">
       <a href="#" class="home"><i class="fa fa-home"></i></a>
@@ -70,38 +108,6 @@
       <a href="#" class="comments"><i class="fa fa-comments"></i><br>152</a>
     </div>
   </div>
-  <main class="main">
-    <div class="article-title">
-      <h1>Bicycle crash trends in Orange County, North Carolina</h1>
-    </div>
-    <article class="article">
-      <p>The <a href="https://bikeleague.org/bfa/awards#state" target="_blank">League of American Bicyclists</a> has
-        ranked North Carolina as the 20th most bicycle-friendly state in the nation and Carrboro as the state's most
-        bicycle-friendly community. However, even bikers in Carrboro and the surrounding county need to watch out for
-        potential crashes with vehicles. Orange County had 194 reported bicycle crashes from 2007 to 2015.</p>
-      <p>Data from Orange County as a whole appears to show that bicyclists from ages 20 to 24 are involved the most
-        frequently in bicycle crashes. When analyzing the crashes by their location in Chapel Hill, Carrboro or a rural
-        area, it becomes evident that bicycle crashes in Chapel Hill are the cause of this trend. The high number of
-        crashes with bikers in their early twenties is likely due to the large student population at the University of
-        North Carolina at Chapel Hill.</p>
-      <h3>Bicycle Crashes in Orange County per Biker Age Group</h3>
-      <div id="chart1" class="chart"></div>
-      <h6>North Carolina Department of Transportation Bicycle Crashes, 2007 to 2015</h6>
-      <div id="chart2" class="chart"></div>
-      <h6>North Carolina Department of Transportation Bicycle Crashes, 2007 to 2015</h6>
-      <p>Bicyclists from ages 50 to 59 are the second group involved most frequently in Orange County bicycle crashes
-        due to the high number of crashes for this age group in rural locations. According to the
-        <a href="https://www.cdc.gov/motorvehiclesafety/bicycle/index.html" target="_blank">Centers for Disease Control
-          and Prevention</a>, adults aged 50 to 59 years old have the highest bicycle death rates in the United States.
-        The data for rural crashes in Orange County follow this national trend, unlike the crash data for urban Carrboro
-        and Chapel Hill. It's possible that these cities' policies for bicyclist safety and mobility have a significant
-        impact for older bicyclists at risk of serious and life-threatening injury. The demographics
-        for
-        each area may also contribute to these data trends.
-      </p>
-    </article>
-  </main>
-
   <script src="https://use.fontawesome.com/2998d61270.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
