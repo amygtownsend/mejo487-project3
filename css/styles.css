@@ -92,6 +92,7 @@ a {
   display: block;
   margin: 0 auto;
   width: 180px;
+  height: 27px;
 }
 
 .logo-tagline {
@@ -117,6 +118,10 @@ a {
   height: 100%;
   color: #f0f0f0;
   font-size: 24px;
+}
+
+.sign-in-mobile-icon {
+  height: 24px;
 }
 
 .search, .sections, .sign-in, .subscribe {
